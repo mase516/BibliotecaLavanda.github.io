@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="Stylesheet" type="text/css" href="Estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Subscripción</title>
+    <meta name="keywords" content="Libros,Peliculas,Bibilioteca,Videojuegos">
+    <meta name="description" content="Informacion acerca de los articulos a los que quieres que se te haga el prestamo">
+  </head>
+
+<body>
+<div class="container"></div>
+<div class="header"></div>
+<a href="index.html"><img src="imagenes/lavanda-removebg-preview.png" alt="" width=500></a>
+    <ul class="menu top">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Libros.html">Libros</a></li>
+        <li><a href="Peliculas.html">Peliculas</a></li>
+        <li><a href="Videojuegos.html">Videojuegos</a></li>
+        <li><a href="Formulario.html">Formulario</a></li>
+    </ul>
+    <img src="imagenes/pueblolavanda-removebg-preview.png" alt="" width=1000 style="margin-left: 430px;">
+    <form action="maneja_formulario.php" method="post">
+      <fieldset style="width:400px">
+        <legend>Datos personales</legend>
+        Nombre <br/>
+        <input type="text" name="nombre" value="" maxlength="15"/>
+        <br/>
+        Apellidos <br/>
+        <input type="text" name="apellidos" value="" maxlength="25"/>
+        <br/>
+        DNI <br/>
+        <input type="text" name="dni" value="" size="10" maxlength="9" /> <br/>
+        Codigo Usuario <br/>
+        <input type="text" name="usuario" value="" maxlength="15"/>
+        <br/>
+      </fieldset>
+    
+      <fieldset style="width:400px">
+        <legend>Datos del usuario</legend>
+        <label for="prestamo">Prestamos</label> <br/>
+  <select id="prestamo" name="prestamo" multiple = "multiple">
+  <optgroup label="Libros">
+    <option value="El libro troll">El Libro Troll</option>
+    <option value="Codigo Lyoko">Codigo Lyoko el Castillo Subterraneo</option>
+    <option value="El Nombre del Viento">El Nombre del Viento</option>
+    <option value="Five Nights at Freddys">Five Nights at Freddy's</option>
+    <option value="El Imperio Final">El Imperio Final</option>
+    <option value="Este Libro es Secreto">Este Libro es Secreto</option>
+  </optgroup>
+  <optgroup label="Peliculas">
+    <option value="Los Teleñecos en cuentos de Navidad">Los Teleñecos en cuentos de Navidad</option>
+    <option value="El Tour de los Muppets">El Tour de los Muppets</option>
+    <option value="The Muppets">The Muppets</option>
+    <option value="Las Primeras Aventuras de Gustavo">Las Primeras Aventuras de Gustavo</option>
+    <option value="Los Muppets y el mago de Oz">Los Muppets y el mago de Oz</option>
+    <option value="Los Muppets en la isla del tesoro">Los Muppets en la isla del tesoro</option>
+  </optgroup>
+  <optgroup  label="Videojuegos">
+    <option value="Los Muppets, Aventuras de pelicula">Los Muppets, Aventuras de pelicula</option>
+    <option value="Crash Bandicoot PS2">Crash Bandicoot PS2</option>
+    <option value="Wii Party">Wii Party</option>
+    <option value="Minecraft PS3">Minecraft PS3</option>
+    <option value="Pokemon Rojo Fuego GBA">Pokemon Rojo Fuego GBA</option>
+    <option value="Super Mario Bros DS">Super Mario Bros DS</option>
+  </optgroup>
+</select>
+        <br/>
+        <label for="start">Fecha de recogida:</label> <br/>
+        <input type="date" id="start" name="trip-start"  min="2023-12-08" max="2024-12-31" />
+      </fieldset>
+      <input type="button" name="guardar" value="Guardar Cambios" />
+      <input type="reset" name="limpiar" value="Borrar datos del formulario" />
+      <input type="submit" name="enviar" value="Enviar" />
+    </form>
+    <br>
+    <div class="footer">
+        <span><a href="#">Volver arriba</a></span>
+    </div>
+<ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Libros.html">Libros</a></li>
+          <li><a href="Peliculas.html">Peliculas</a></li>
+          <li><a href="Videojuegos.html">Videojuegos</a></li>
+          <li><a href="Formulario.html">Formulario</a></li>
+        </ul>
+</body>

@@ -1,0 +1,198 @@
+.container {
+  width: 965px;
+  background: white;
+  margin: auto;
+  border-radius: 25px;
+}
+body {
+  background: pink;
+}
+.top {
+  margin-top: 30px;
+}
+.menu {
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu li {
+  display: inline-block;
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.menu a:hover {
+  background: rgb(188, 102, 209);
+}
+.col {
+  width: 265px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.portada {
+  width: 1000;
+  margin-left: 550px;
+}
+.col h2 {
+  color: rgb(188, 102, 209);
+}
+.row {
+  text-align: center;
+}
+.footer {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer a:hover {
+  background: rgb(188, 102, 209);
+}
+.footer a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+.footer span {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+form fieldset {
+  width: 48%;
+}
+input:focus {
+  border: 2px solid #000;
+  background: #f3f3f3;
+}
+form.elegante input {
+  padding: 0.2em;
+}
+
+.titulo {
+  text-align: center;
+  color: rgb(188, 102, 209);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.enlaceindex {
+  color: rgb(188, 102, 209);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  .col {
+    width: 100%;
+    max-width: none;
+    margin: 15px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .portada {
+    width: 1000;
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 2048px) {
+  body {
+    font-size: 20px;
+    background: pink;
+  }
+  .container {
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  menu {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .menu a:hover {
+    background: rgb(188, 102, 209);
+  }
+  col {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .portada {
+    width: 750;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .col h2 {
+    color: rgb(188, 102, 209);
+  }
+  .row {
+    text-align: center;
+  }
+  .footer {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer a:hover {
+    background: rgb(188, 102, 209);
+  }
+  .footer a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+  }
+  .footer span {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  form fieldset {
+    width: 48%;
+  }
+  input:focus {
+    border: 2px solid #000;
+    background: #f3f3f3;
+  }
+  form.elegante input {
+    padding: 0.2em;
+  }
+  .titulo {
+    text-align: center;
+    color: rgb(188, 102, 209);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .enlaceindex {
+    color: rgb(188, 102, 209);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 15px;
+  }
+}
